@@ -33,5 +33,5 @@ while tries > 0:
 
     # Win check
     if all(letter in guessed for letter in word):
-        print("🎉 Congratulations! You guessed the word:", word)
+        print("Congratulations! You guessed the word:", word)
         break
