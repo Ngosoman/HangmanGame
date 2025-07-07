@@ -23,10 +23,10 @@ while tries > 0:
         print("You already guessed that letter.")
     elif guess in word:
         guessed.append(guess)
-        print("✅ Correct!")
+        print(" Correct!")
     else:
         guessed.append(guess)
         tries -= 1
-        print("❌ Wrong! You have", tries, "tries left.")
+        print(" Wrong! You have", tries, "tries left.")
 
     print(display_word())
