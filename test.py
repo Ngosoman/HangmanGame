@@ -35,3 +35,7 @@ while tries > 0:
     if all(letter in guessed for letter in word):
         print("Congratulations! You guessed the word:", word)
         break
+
+    # Lose check
+if tries == 0:
+    print("💀 Game Over! The word was:", word)
