@@ -30,3 +30,8 @@ while tries > 0:
         print(" Wrong! You have", tries, "tries left.")
 
     print(display_word())
+
+    # Win check
+    if all(letter in guessed for letter in word):
+        print("🎉 Congratulations! You guessed the word:", word)
+        break
