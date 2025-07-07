@@ -8,7 +8,7 @@ word = random.choice(words)
 guessed = []
 tries = 6
 
-# Display word with underscores
+# Display  with underscores
 def display_word():
     return " ".join([letter if letter in guessed else "_" for letter in word])
 
@@ -31,11 +31,12 @@ while tries > 0:
 
     print(display_word())
 
-    # Win check
+    # If Win
     if all(letter in guessed for letter in word):
         print("Congratulations! You guessed the word:", word)
         break
 
-    # Lose check
+    # If Lose
 if tries == 0:
     print("💀 Game Over! The word was:", word)
+    
