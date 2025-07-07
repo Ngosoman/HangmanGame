@@ -14,3 +14,19 @@ def display_word():
 
 print("Welcome to Hangman!")
 print(display_word())
+
+# Game loop
+while tries > 0:
+    guess = input("Guess a letter: ").lower()
+
+    if guess in guessed:
+        print("You already guessed that letter.")
+    elif guess in word:
+        guessed.append(guess)
+        print("✅ Correct!")
+    else:
+        guessed.append(guess)
+        tries -= 1
+        print("❌ Wrong! You have", tries, "tries left.")
+
+    print(display_word())
